@@ -1,6 +1,10 @@
 Dash Cheatsheets
 ================
 
+Here you will find a collection of docsets for [Dash](http://kapeli.com/dash) containing cheatsheets.
+
+Note: This project uses [Git-flow](https://github.com/nvie/gitflow). Development happens on "develop" branch. Releases ore on "master" branch.
+
 Git-flow
 --------
 
