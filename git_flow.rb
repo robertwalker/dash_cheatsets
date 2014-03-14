@@ -2,7 +2,7 @@ cheatsheet do
   title 'Git-flow'
   docset_file_name 'Git-flow'
   keyword 'git-flow'
-  source_url 'https/github.com/robertwalker/git-flow-cheatset'
+  source_url 'https://github.com/robertwalker/dash_cheatsets'
 
   category do
     id 'Create'
