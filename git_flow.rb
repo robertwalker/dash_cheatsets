@@ -93,5 +93,26 @@ cheatsheet do
       ```
       git push --tags
       ```"
+    end
+  end
+
+  category do
+    id 'Hotfixes'
+
+    entry do
+      name 'Start a hotfix'
+      notes "
+      ```
+      git flow hotfix start <version_name> [<base_name>]
+      ```"
+    end
+
+    entry do
+      name 'Finish a hotfix'
+      notes "
+      ```
+      git flow hotfix finish <version_name>
+      ```"
+    end
   end
 end
