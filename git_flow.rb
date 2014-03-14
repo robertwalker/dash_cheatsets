@@ -55,4 +55,32 @@ cheatsheet do
       ```"
     end
   end
+
+  category do
+    id 'Releases'
+
+    entry do
+      name 'Start a release'
+      notes "
+      ```
+      git flow release start <release_name> [<base>]
+      ```"
+    end
+
+    entry do
+      name 'Publish a release'
+      notes "
+      ```
+      git flow release publish <release_name>
+      ```"
+    end
+
+    entry do
+      name 'Finish up a release'
+      notes "
+      ```
+      git flow release finish <release_name>
+      ```"
+    end
+  end
 end
