@@ -86,5 +86,12 @@ cheatsheet do
       git flow release finish <release_name>
       ```"
     end
+
+    entry do
+      name "Don't forget to push your tags"
+      notes "
+      ```
+      git push --tags
+      ```"
   end
 end
