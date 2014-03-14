@@ -20,7 +20,7 @@ cheatsheet do
     id 'Features'
 
     entry do
-      name 'Starting a new feature'
+      name 'Start a new feature'
       notes "
       ```
       git flow feature start <feature_name>
@@ -44,12 +44,16 @@ cheatsheet do
     end
 
     entry do
-      name 'Getting a published feature'
+      name 'Get a published feature'
       notes "
       ```
       git flow feature pull origin <feature_name>
-      ```
-      You can track a feature on origin by using
+      ```"
+    end
+
+    entry do
+      name 'Track a feature on origin'
+      notes "
       ```
       git flow feature track <feature_name>
       ```"
