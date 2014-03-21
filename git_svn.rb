@@ -5,7 +5,7 @@ cheatsheet do
   source_url 'https://github.com/robertwalker/dash_cheatsets'
 
   category do
-    id 'Clone'
+    id 'Cloning & Setup'
 
     entry do
       name 'Clone a Subversion repository as a Git repository using standard Subversion layout'
@@ -14,6 +14,22 @@ cheatsheet do
       git svn clone -s --prefix=origin/ <subversion-url>
       ```
       Example: `git svn clone -s --prefix=origin/ svn://example.com/repository/MyProject`"
+    end
+
+    entry do
+      name 'Recursively find all the svn:ignore properties and generate a matching .gitignore file'
+      notes "
+      ```
+      git svn create-ignore
+      ```"
+    end
+
+    entry do
+      name 'Recursively find all the svn:ignore properties and append the output to $GIT_DIR/info/exclude'
+      notes "
+      ```
+      git svn show-ignore >> .git/info/exclude
+      ```"
     end
   end
 
@@ -50,8 +66,7 @@ cheatsheet do
       ```
       git add .
       ```
-      Note: This will also add untracked files to the index.
-      "
+      Note: This will also add untracked files to the index."
     end
 
     entry do
@@ -68,8 +83,16 @@ cheatsheet do
       ```
       git commit -a
       ```
-      Note: This will not include untracked files. Use `git add .` or `git add <file>` to stage untracked files.
-      "
+      Note: This will not include untracked files. Use `git add .` or `git add <file>` to stage untracked files."
+    end
+
+    entry do
+      name 'Discard all local changes in your working tree'
+      notes "
+      ```
+      git reset --hard HEAD
+      ```
+      Warning: This command will discard all local changes to tracked files without warning! Consider this your warning."
     end
   end
 
@@ -119,8 +142,7 @@ cheatsheet do
       ```
       git branch -r
       ```
-      Note: This lists all branches ever created in the Subversion repository (including deleted ones).
-      "
+      Note: This lists all branches ever created in the Subversion repository (including deleted ones)."
     end
     entry do
       name 'Switch HEAD branch'
@@ -152,8 +174,7 @@ cheatsheet do
       ```
       git checkout -b <new-branch> <remote-branch>
       ```
-      Note: This assumes the Git default configuration of `--track` for remote tracking branches.
-      "
+      Note: This assumes the Git default configuration of `--track` for remote tracking branches."
     end
 
     entry do
@@ -162,8 +183,7 @@ cheatsheet do
       ```
       git branch -d <branch>
       ```
-      Note: Use `git branch -D <branch>` to delete a branch regardless of merge status.
-      "
+      Note: Use `git branch -D <branch>` to delete a branch regardless of merge status."
     end
   end
 
