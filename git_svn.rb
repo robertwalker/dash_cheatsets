@@ -85,6 +85,15 @@ cheatsheet do
       ```
       Note: This will not include untracked files. Use `git add .` or `git add <file>` to stage untracked files."
     end
+
+    entry do
+      name 'Discard all local changes in your working tree'
+      notes "
+      ```
+      git reset --hard HEAD
+      ```
+      Warning: This command will discard all local changes to tracked files without warning! Consider this your warning."
+    end
   end
 
   category do
