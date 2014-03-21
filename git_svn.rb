@@ -66,8 +66,7 @@ cheatsheet do
       ```
       git add .
       ```
-      Note: This will also add untracked files to the index.
-      "
+      Note: This will also add untracked files to the index."
     end
 
     entry do
@@ -84,8 +83,7 @@ cheatsheet do
       ```
       git commit -a
       ```
-      Note: This will not include untracked files. Use `git add .` or `git add <file>` to stage untracked files.
-      "
+      Note: This will not include untracked files. Use `git add .` or `git add <file>` to stage untracked files."
     end
   end
 
@@ -135,8 +133,7 @@ cheatsheet do
       ```
       git branch -r
       ```
-      Note: This lists all branches ever created in the Subversion repository (including deleted ones).
-      "
+      Note: This lists all branches ever created in the Subversion repository (including deleted ones)."
     end
     entry do
       name 'Switch HEAD branch'
@@ -168,8 +165,7 @@ cheatsheet do
       ```
       git checkout -b <new-branch> <remote-branch>
       ```
-      Note: This assumes the Git default configuration of `--track` for remote tracking branches.
-      "
+      Note: This assumes the Git default configuration of `--track` for remote tracking branches."
     end
 
     entry do
@@ -178,8 +174,7 @@ cheatsheet do
       ```
       git branch -d <branch>
       ```
-      Note: Use `git branch -D <branch>` to delete a branch regardless of merge status.
-      "
+      Note: Use `git branch -D <branch>` to delete a branch regardless of merge status."
     end
   end
 
