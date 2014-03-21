@@ -5,7 +5,7 @@ cheatsheet do
   source_url 'https://github.com/robertwalker/dash_cheatsets'
 
   category do
-    id 'Clone'
+    id 'Cloning & Setup'
 
     entry do
       name 'Clone a Subversion repository as a Git repository using standard Subversion layout'
@@ -14,6 +14,22 @@ cheatsheet do
       git svn clone -s --prefix=origin/ <subversion-url>
       ```
       Example: `git svn clone -s --prefix=origin/ svn://example.com/repository/MyProject`"
+    end
+
+    entry do
+      name 'Recursively find all the svn:ignore properties and generate a matching .gitignore file'
+      notes "
+      ```
+      git svn create-ignore
+      ```"
+    end
+
+    entry do
+      name 'Recursively find all the svn:ignore properties and append the output to $GIT_DIR/info/exclude'
+      notes "
+      ```
+      git svn show-ignore >> .git/info/exclude
+      ```"
     end
   end
 

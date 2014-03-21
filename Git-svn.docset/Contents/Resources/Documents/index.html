@@ -4,8 +4,10 @@
     <meta charset='utf-8'>
     <title>Git-svn</title>
     <link href='style.css' rel='stylesheet'>
-    <link href='//dash_ref/Category/Clone/1'>
-    <link href='//dash_ref_Clone/Entry/Clone a Subversion repository as a Git repository using standard Subversion layout/0'>
+    <link href='//dash_ref/Category/Cloning &amp; Setup/1'>
+    <link href='//dash_ref_Cloning &amp; Setup/Entry/Clone a Subversion repository as a Git repository using standard Subversion layout/0'>
+    <link href='//dash_ref_Cloning &amp; Setup/Entry/Recursively find all the svn:ignore properties and generate a matching .gitignore file/0'>
+    <link href='//dash_ref_Cloning &amp; Setup/Entry/Recursively find all the svn:ignore properties and append the output to $GIT_DIR%2Finfo%2Fexclude/0'>
     <link href='//dash_ref/Category/Local Changes/1'>
     <link href='//dash_ref_Local Changes/Entry/List changed files in your working directory/0'>
     <link href='//dash_ref_Local Changes/Entry/List changes to tracked files/0'>
@@ -37,11 +39,11 @@
     <article>
       <p></p>
       <section class='category'>
-        <h2 id='//dash_ref/Category/Clone/1'>
-          Clone
+        <h2 id='//dash_ref/Category/Cloning &amp; Setup/1'>
+          Cloning & Setup
         </h2>
         <table>
-          <tr id='//dash_ref_Clone/Entry/Clone a Subversion repository as a Git repository using standard Subversion layout/0'>
+          <tr id='//dash_ref_Cloning &amp; Setup/Entry/Clone a Subversion repository as a Git repository using standard Subversion layout/0'>
             <td class='description' colspan='2'>
               <div class='name'><p>Clone a Subversion repository as a Git repository using standard Subversion layout</p></div>
               <div class='notes'>
@@ -49,6 +51,18 @@
                 
                 <p>Example: <code>git svn clone -s --prefix=origin/ svn://example.com/repository/MyProject</code></p>
               </div>
+            </td>
+          </tr>
+          <tr id='//dash_ref_Cloning &amp; Setup/Entry/Recursively find all the svn:ignore properties and generate a matching .gitignore file/0'>
+            <td class='description' colspan='2'>
+              <div class='name'><p>Recursively find all the svn:ignore properties and generate a matching .gitignore file</p></div>
+              <div class='notes'><pre class="highlight plaintext">git svn create-ignore</pre></div>
+            </td>
+          </tr>
+          <tr id='//dash_ref_Cloning &amp; Setup/Entry/Recursively find all the svn:ignore properties and append the output to $GIT_DIR%2Finfo%2Fexclude/0'>
+            <td class='description' colspan='2'>
+              <div class='name'><p>Recursively find all the svn:ignore properties and append the output to $GIT_DIR/info/exclude</p></div>
+              <div class='notes'><pre class="highlight plaintext">git svn show-ignore &gt;&gt; .git/info/exclude</pre></div>
             </td>
           </tr>
         </table>
