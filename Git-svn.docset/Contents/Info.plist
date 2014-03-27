@@ -5,13 +5,13 @@
 	<key>CFBundleIdentifier</key>
 	<string>cheatsheet</string>
 	<key>CFBundleName</key>
-	<string>Git svn</string>
+	<string>Git Subversion</string>
 	<key>DashDocSetFamily</key>
 	<string>cheatsheet</string>
 	<key>DashDocSetKeyword</key>
-	<string>git-svn</string>
+	<string>gitsvn</string>
 	<key>DashDocSetPluginKeyword</key>
-	<string>git-svn</string>
+	<string>gitsvn</string>
 	<key>DocSetPlatformFamily</key>
 	<string>cheatsheet</string>
 	<key>dashIndexFilePath</key>
