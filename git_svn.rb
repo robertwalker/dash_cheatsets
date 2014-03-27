@@ -1,5 +1,5 @@
 cheatsheet do
-  title 'Git-svn'
+  title 'Git svn'
   docset_file_name 'Git-svn'
   keyword 'git-svn'
   source_url 'https://github.com/robertwalker/dash_cheatsets'
