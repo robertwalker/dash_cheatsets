@@ -1,7 +1,7 @@
 cheatsheet do
-  title 'Git-svn'
+  title 'Git Subversion'
   docset_file_name 'Git-svn'
-  keyword 'git-svn'
+  keyword 'gitsvn'
   source_url 'https://github.com/robertwalker/dash_cheatsets'
 
   category do
